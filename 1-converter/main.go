@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 const (
@@ -12,7 +11,5 @@ const (
 
 func main() {
 	EURToRUB := USDToRUB / USDToEUR
-	EURToRUB = math.Round(EURToRUB*100) / 100
-
-	fmt.Println("Курс EUR к RUB:", EURToRUB)
+	fmt.Printf("Курс EUR к RUB: %.2f\n", EURToRUB)
 }
